@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHS Music Wrapped</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        @font-face {
+            font-family: 'LinetoCircular';
+            src: url('lineto-circular-black.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+        body, .big-number, .subtitle, .leaderboard, .group-stats {
+            font-family: 'LinetoCircular', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-svg">
+        <!-- Decorative SVG shapes for background -->
+        <svg class="svg-lines" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 100 Q400 0 800 100" stroke="#fff" stroke-width="3"/>
+            <path d="M0 300 Q400 200 800 300" stroke="#fff" stroke-width="2"/>
+            <path d="M0 500 Q400 400 800 500" stroke="#fff" stroke-width="2"/>
+        </svg>
+        <svg class="svg-circles" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="80" stroke="#b6aaff" stroke-width="8"/>
+        </svg>
+    </div>
+    <main class="hero">
+        <div class="group-stats">
+            <div class="stat-block">
+                <div class="big-number" id="students-minutes">21,500</div>
+                <div class="subtitle">Average minutes listened by <span class="highlight">Students</span></div>
+            </div>
+            <div class="stat-block">
+                <div class="big-number" id="staff-minutes">17,800</div>
+                <div class="subtitle">Average minutes listened by <span class="highlight">Staff</span></div>
+            </div>
+        </div>
+        <section class="leaderboard">
+            <h2>Top 5 Listeners</h2>
+            <ol id="leaderboard-list">
+                <li><span class="name">Placeholder</span> <span class="minutes">39,326</span></li>
+                <li><span class="name">Placeholder</span> <span class="minutes">37,210</span></li>
+                <li><span class="name">Placeholder</span> <span class="minutes">35,890</span></li>
+                <li><span class="name">Placeholder</span> <span class="minutes">34,500</span></li>
+                <li><span class="name">Placeholder</span> <span class="minutes">33,100</span></li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>

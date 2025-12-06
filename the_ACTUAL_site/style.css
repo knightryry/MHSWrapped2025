@@ -53,7 +53,7 @@ body {
 }
 @keyframes heroFadeIn {
     from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translate(center, center); }
+    to { opacity: 1; transform: none; }
 }
 
 .group-stats {
@@ -108,8 +108,6 @@ body {
     font-weight: 700;
 }
 .leaderboard {
-    display: grid;
-    place-items: center;
     background: #22223aee;
     border-radius: 2rem;
     padding: 2rem 2.5rem;
